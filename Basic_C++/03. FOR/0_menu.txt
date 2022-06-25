@@ -1,0 +1,36 @@
+1. Ve tam giac can
+
+2. Ve tam giac vuong can nguoc ben trai
+
+3. Ve tam giac can, vuong can nguoc (vuong can nguoc ben phai)
+
+4. Ve tam giac vuong can dac
+
+5. Ve tam giac vuong can rong 
+
+6. Ve tam giac can
+
+7. Viết ctrình in ra all các số có 4 chữ số abcd mà a + b = c + d.
+
+8. Vẽ hcn đặc
+
+9. Tinh tong S = 1 + 4 + 9 + ... + n^2
+   Tinh tong S = 1 - 4 + 9 - 16 + ... + ((-1)^(n-1))*n^2
+
+13. Viết chương trình nhập vào 1 số nguyên dương n. In ra các số
+nguyên tố trong phạm vi n.
+
+14. Viết chương trình đảo ngược một số nguyên bất kỳ được nhập từ bàn phím. Ví dụ:
+34567, đảo ngược lại thành 76543
+
+15. Kiểm tra 1 số có phải là số nto k
+
+17. Tính S(n) = 1 + 1.2 + 1.2.3 + … + 1.2.3….N
+
+18. Tính tích các chữ số của số nguyên dương n 
+
+19. Kiểm tra các chữ số của số nguyên dương n có tăng dần từ trái sang phải hay không 
+                                                           
+20. Số bạn bè
+
+21. Vẽ chong chóng

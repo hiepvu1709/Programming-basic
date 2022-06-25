@@ -1,0 +1,10 @@
+Bai_1: Có ba cột A, B, C. Cột A hiện đang gắn n đĩa có kích thước khác nhau, đĩa nhỏ ở trên đĩa lớn hơn ở dưới.
+Cần chuyển n đĩa từ cột A sang cột C ( dùng cột B làm trung gian) với điều kiện mỗi lần chỉ được chuyển một
+đĩa, đĩa đặt trên bao giờ cũng nhỏ hơn đĩa đặt dưới.
+
+Bai_2: Sử dụng đệ quy tìm chữ số đầu tiên của số nguyên dương n
+
+Bai_3: Sử dụng hàm đệ quy tính P(x,n)=x^n
+
+Bai_4: Nhập vào số nguyên n viết hàm trả về tổng của các chữ số đó.
+

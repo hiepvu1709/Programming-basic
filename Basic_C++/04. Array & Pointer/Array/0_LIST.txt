@@ -1,0 +1,35 @@
+Bai_1: Chương trinh nhập vào n phần tư của mảng số nguyên và in ra cac phan tu do theo thu tu tăng dần
+
+Bai_2: Chương trinh nhập vào n phần tư của mảng số nguyên và in ra phần tử bé nhất trong mảng
+
+Bai_3: Chương trinh nhập vào n phần tư của mảng số nguyên, in ra và đếm các số dương, số âm , số 0 có trong mảng
+
+Bai_4: Chương trinh nhập vào n phần tư của mảng số nguyên và in ra cac phan tu do theo chiều ngược lại
+
+Bai_5: Chương trinh nhập vào n phần tư của mảng số nguyên và in ra tổng các phần tử lẻ của mảng
+
+Bai_6: Chương trinh nhập vào n phần tư của mảng số nguyên và xóa phần tử tại vị trí bất kỳ theo yêu cầu
+
+Bai_7: Chương trinh nhập vào n phần tư của 2 mảng số nguyên và trộn 2 mảng lại sao cho vẫn giữ được thứ tự tăng dẫn
+
+Bai_8: Tìm giá trị lớn nhất trong mảng 1 chiều 
+
+Bai_9: Liệt kê các vị trí mà tại đó giá trị là âm
+
+Bai_10: Tìm giá trị chẵn cuối cùng trong mảng
+
+Bai_11: Cho mảng 1 chiều số nguyên , tìm đoạn [a,b] sao cho đoạn này chứa tất cả giá trị trong mảng
+
+Bai_12: Cho mảng 1 chiều số nguyên , tìm giá trị đầu tiên trong đoạn cho trước [x,y]
+ 
+Bai_13: Sao chép mảng 1 chiều, tìm kiếm phần tử đầu tiên
+
+Bai_14: Tổng hợp chèn
+
+Bai_15: Phát sinh số ngẫu nhiên trong mảng 1 chiều
+
+Bai_16: Thêm và xóa 1 phần tử của mảng
+
+Bai_17: Hàm nhập tăng dần
+
+

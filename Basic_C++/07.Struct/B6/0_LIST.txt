@@ -1,0 +1,9 @@
+Thứ tự file code của thư mục B6:
+
++ 1_Main
++ header.h
++ Debug.cpp
++ input.cpp
++ intoMoney.cpp
++ output.cpp
++ amountUnder_50.cpp

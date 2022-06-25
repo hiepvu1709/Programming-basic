@@ -1,0 +1,56 @@
+#include <iostream>
+#include<limits>
+#include<cmath>
+using namespace std;
+#define MAX 100
+
+int check(float &n)
+{
+	do{
+		if(!n || pow(n,2) != pow(n,2) || n !=(int)n || n < 0 || n>100)
+		{
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+			cout<<"\nSo nhap vao yeu cau la mot so nguyen duong lon hon 0, moi nhap lai: ";
+			cin>>n;
+		}
+	}while(!n || pow(n,2) != pow(n,2) || n!=(int)n || n < 0 || n>100);
+}
+void input(int b[],int &m)
+{
+	for(int i=0 ; i<m ; i++)
+	{
+		cout<<"b["<<i+1<<"]="; 
+		cin>>b[i];
+		do{
+			
+			if(cin.fail())
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(),'\n');
+				cout<<"\nDu lieu nhap vao mang yeu cau la so nguyen, moi nhap lai: ";
+			 	cin>>b[i];
+			}
+		}while(cin.fail());
+	}
+}
+void output(int b[], int &m)
+{
+	cout<<"\nCac phan tu duoc in theo thu tu nguoc lai nhu sau:\n";
+	for(int i=m -1; i>=0 ; i--)
+	{
+		cout<<b[i]<<" ; ";
+	}
+	cout<<endl;
+}
+int main()
+{
+	int a[MAX],n;
+	float b;
+	cout<<"Nhap so phan tu cua mang: "; cin>>b; check(b);
+	n = (int)b;
+	input(a,n);
+	output(a,n);
+	delete a;
+	return 0;
+}

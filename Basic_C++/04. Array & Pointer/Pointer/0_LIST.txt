@@ -1,0 +1,36 @@
+B1: Viết chương trình thực hiện các công việc sau:
+- Khai báo một biến nguyên và một biến con trỏ
+- Lưu trữ địa chỉ của biến nguyên vào biến con trỏ
+- Hiển thị giá trị của biến nguyên và in địa chỉ được lưu trữ
+trong biến con trỏ
+- Truy cập giá trị có sẵn tại địa chỉ của biến con trỏ
+
+B2: Viết chương trình thực hiện các công việc sau:
+- Khai báo 2 biến nguyên i, j và 2 biến con trỏ p, q, sau đó cho 2 biến
+con trỏ này lần lượt trỏ đến 2 biến nguyên i và j vừa khai báo.
+- In ra địa chỉ của biến nguyên i; in ra địa chỉ biến nguyên j thông qua
+biến con trỏ trỏ tới biến j.
+- Gán cho biến i một giá trị, gán cho biến j một giá trị thông qua biến
+con trỏ trỏ tới biến j
+- Thực hiện tăng giá trị của biến i và j thông qua các biến con trỏ trỏ tới
+chúng và in giá trị của 2 biến j và i vừa tăng ra màn hình.
+
+B3: Viết một chương trình sử dụng biến con trỏ để cộng hai số nguyên a và b.
+
+B4: Viết chương trình hoán vị hai số A và B có sử dụng biến con trỏ.
+
+B5: Hãy viết đoạn chương trình để khai báo biến số nguyên a và xuất ra địa chỉ ô nhớ được cấp phát cho biến
+này khi chương trình chạy
+
+B6: Sử dụng biến con trỏ viết chương trình nhập vào 3 số nguyên a,b,c và tìm số lớn nhất trong 3 số nguyên vừa
+nhập.
+
+B7: Viết chương trình để giải phương trình bậc nhất có sử dụng biến con trỏ
+
+B8: Hãy khai báo biến con trỏ p các số nguyên và viết lệnh cấp phát không gian bộ nhớ để biến con trỏ p có thể
+chứa 100 số nguyên. Sau đó viết lệnh thu hồi lại không gian bộ nhớ đã cấp phát cho con trỏ.
+
+B9: Viết chương trình tính giai thừa của một số có sử dụng biến con trỏ
+
+B10: Viết chương trình sử dụng biến con trỏ để giải phương trình bậc 2: ax² + bx + c = 0 (a ≠ 0) với a, b, c
+nhập vào từ bàn phím

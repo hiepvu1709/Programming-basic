@@ -1,0 +1,77 @@
+#include <iostream>
+#include <iomanip>
+#include<limits>
+#include<cmath>
+using namespace std;
+
+int check(float &n)
+{
+	do{
+		if(!n || pow(n,2) != pow(n,2) || n !=(int)n || n < 0 || n>100)
+		{
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+			cout<<"\nSo nhap vao yeu cau la mot so nguyen duong lon hon 0, moi nhap lai: ";
+			cin>>n;
+		}
+	}while(!n || pow(n,2) != pow(n,2) || n!=(int)n || n < 0 || n>100);
+}
+void input(int* b,int m)
+{
+	for (int i=0;i<m;i++)
+	{ 
+		cout<<"b["<<i+1<<"]="; 
+		cin>>b[i];
+		do{
+			
+			if(cin.fail())
+			{
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(),'\n');
+				cout<<"\nDu lieu nhap vao mang yeu cau la so nguyen, moi nhap lai: ";
+			 	cin>>b[i];
+			}
+		}while(cin.fail());
+	}
+}
+void output(int* b, int &m)
+{
+	for(int i=0 ; i<m ; i++)
+	{
+		cout<<b[i]<<"\t";
+	}
+}
+void xoa(int* a, int &n, float &k)
+{
+	int size = sizeof(a);
+	cout<<"Nhap so k: "; cin>>k;
+	do{
+		if(!k || k != (int)k || k<0 || k>size)
+		{
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(),'\n');
+			cout<<"\nBan nhap vi tri can xoa khong hop le, yeu cau nhap so nguyen duong, moi nhap lai: ";
+			cin>>k;
+		}
+	}while(!k || k != (int)k || k<0 || k>size);
+	for(int i=k-1 ; i<n ; i++)
+	{
+		a[i] = a[i+1];
+	}
+	n--;
+	cout<<"\nMang sau khi xoa la: ";
+	output(a,n);
+}
+int main()
+{
+	float b,k;
+	int n;
+	cout<<"Nhap so phan tu cua mang: "; cin>>b; check(b);
+	n = (int)b;
+	int a[n];
+	input(a,n);
+	cout<<"\nCac phan tu vua nhap la:\n";
+	output(a,n);
+	xoa(a,n,k);
+	return 0;
+}

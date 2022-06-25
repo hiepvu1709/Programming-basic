@@ -1,0 +1,14 @@
+Thứ tự file code của thư mục B2:
+
++ 1_Main
++ header.h
++ findDay.cpp
++ inputDay.cpp
++ outputDay.cpp
++ findThu.cpp
++ nextDay.cpp
++ lastDay.cpp
++ blockInMain.cpp
+
+Mục đích chia ra các file nhỏ là dễ nhìn dễ đọc, tuy trình bày không đẹp nhưng dễ kiểm soát code hơn
+giả sử khi chạy chương trình mà bị mắc 1 lỗi ở file nào đó thì dễ chỉnh sửa hơn là để hết code ở trong 1 file.

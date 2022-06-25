@@ -1,0 +1,21 @@
+B1: Tìm ước số lẻ lớn nhất của số nguyên dương n. Ví dụ n = 100 ước lẻ lớn nhất là 25
+
+B2: Lập chương trình giải hệ: ax + by = c, Dx + ey = f. Các hệ số nhập từ bàn phím
+
+B3: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
+
+B4: Cho mảng 1 chiều số nguyen. Hãy viết hàm tìm 1 vị trí (.) mảng thỏa 2 đk: có 2 gtrị lân cận và gtrị tại đó = tích 2 gtrị lân cận. 
+Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+
+B5: Liệt kê tần suất xuất hiện các giá trị trong mảng (mỗi giá trị liệt kê 1 lần)
+
+B6: Sắp xếp lẻ tăng dần nhưng giá trị khác giữ nguyên vị trí
+
+B7: Xóa tất cả các phần tử trùng nhau trong mảng và chỉ giữ lại duy nhất 1 phần tử
+
+B8: Hãy đưa chẵn về đầu, lẻ về cuối, phần tử 0 nằm giữa mảng
+
+B9: Tạo mảng b chỉ chứa giá trị lẻ từ mảng a
+
+B10: Đếm số lượng giá trị “Hoàng Hậu” trên ma trận. Một phần tử được gọi là Hoàng Hậu
+ khi nó lớn nhất trên dòng, trên cột và 2 đường chéo đi qua nó
