@@ -1,0 +1,25 @@
+/* Reset CSS */
+
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+/*
+
+#header {
+
+}
+
+#slider {
+
+}
+
+#conten {
+
+}
+
+#footer {
+
+}

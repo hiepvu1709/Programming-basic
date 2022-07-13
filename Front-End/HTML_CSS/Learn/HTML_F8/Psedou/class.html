@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --text--color : green;
+        }
+
+        p{
+            color: var(--text--color);
+        }
+       
+
+        .Hover:hover {
+            color: red;
+        }
+
+        .Active:active {
+            font-size: 60px;
+        }
+
+        .Action:first-child {
+            font-size: 40px;
+        }
+
+        .Last:last-child {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+        <p class="Root">:root</p>
+        <p class = "Hover">:hover</p>
+        <p class="Active">:active</p>
+        <p class="Action">first-child</p>
+        <p class="Last">last-child</p>
+</body>
+</html>
+
+<!--
+    :root nó sẽ css cho thẻ gốc của nó tức là html, và vì là nó chỉ css cho thẻ nên nó k css cho selector nào khác
+    :hover di chuột qua thì kích hoạt css
+    :active bấm chuột thì kích hoạt css
+    :first-child : đầu
+    :last-child : cuối
+-->
