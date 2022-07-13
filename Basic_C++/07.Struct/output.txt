@@ -1,5 +1,0 @@
-
-Trung binh cac so le trong mang bang 22.5
-
-Cac so nguyen to trong mang la: 89 
-Co tat ca 1 so nguyen to trong mang!
