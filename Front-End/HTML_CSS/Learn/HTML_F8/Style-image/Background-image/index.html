@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin-bottom: 10px;
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://www.w3schools.com/w3images/la.jpg');
+            background-repeat: no-repeat;   /* repeat-x or repeat-y */
+            background-size: 100%;
+        }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0, #333, #eee) ;      /*  linear-gradient() là dải màu chuyển  */ 
+        }
+
+        /*
+            Syntax background: bg-color bg-img bg-position / bg-size bg-origin bg-clip bg-attachment; 
+        */
+
+        .content {
+            width: 1000px;
+            height: 100vh;
+        }
+        
+        .content2{
+            width: 900px;
+            height: 100vh;
+            background:url('https://www.w3schools.com/w3images/la.jpg')   center center / 200px 150px no-repeat;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="slider"></div>
+    <div class="content">
+        <div class="content2"></div>
+    </div>
+</body>
+</html>
