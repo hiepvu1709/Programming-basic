@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var mySalary = 1000000;
+       var reallySalary = mySalary * 2.3;
+       if(reallySalary > 3e9) {
+        console.log('Sắp giàu rồi đấy anh bạn!');
+       }else {
+        console.log('Mọt xác nha mày!');
+       }
+
+       // Ternary operator
+       var course = {
+        name: 'JavaScript',
+        coin: 250
+       }
+       var result = course.coin > 0 ? `${course.coin} Coins` : 'Miễn phí';
+       console.log(result);
+
+       var a = 1;var b = 2
+       var c = a > 0 ? a : b;
+       console.log(c);
+
+       // switch
+       function chooseDay (date) {
+            switch(date) {
+                case 2:
+                    console.log('Today is thứ 2!');
+                    break;
+                case 3:
+                    console.log('Today is thứ 3!');
+                    break;
+                case 4:
+                    console.log('Today is thứ 4!');
+                    break;
+                case 5:
+                    console.log('Today is thứ 5!');
+                    break;
+                case 6:
+                    console.log('Today is thứ 6!');
+                    break;
+                case 7:
+                    console.log('Today is thứ 7!');
+                    break;
+                case 8:
+                    console.log('Today is chủ nhật!');
+                    break;
+                default: 
+                    console.log('Không hợp lệ!');
+                    break;
+            }
+       }
+       chooseDay(4);
+    </script>
+</body>
+</html>

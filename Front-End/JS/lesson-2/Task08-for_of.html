@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for of lấy ra từng phần tử của mảng
+        // trong trường hợp là 1 chuỗi , mỗi lần lặp tách ra mỗi phần tử là ký tự
+        var language = [
+            'JavaScript',
+            'PHP',
+            'Java'
+        ];
+        for (var value of language) {
+            console.log(value);
+        }
+
+        // trường hợp là 1 object thì phải biến đổi 1 chút
+        var myInfo = {
+            name: 'Xuan Hiep',
+            age: 18
+        };
+
+                        // Object.values(myInfo) và dưới code bỏ đi get value 
+        for (var value of Object.keys(myInfo)) {
+            console.log(value); // get key
+            console.log(myInfo[value]); // get value
+        }
+
+        
+    </script>
+</body>
+</html>

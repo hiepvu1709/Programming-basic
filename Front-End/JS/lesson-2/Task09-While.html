@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+        while (i<1000) {
+            // bắt buộc phải nhớ là sau khi viết điều kiện để vòng lặp chạy thì phải tăng giá trị của i lên 1  
+            i++;    // nếu mà i ở trên = 1 thì dòng i++ phải chuyển xuống bên dưới console
+            console.log(i);
+        }
+
+        var myArray = [
+            'JavaScript',
+            'PHP'
+        ];
+
+        var i = 0;
+        while (i < myArray.length) {
+            console.log(myArray[i]);
+            i++;
+        }
+
+        // sẽ kiểm tra điều kiện từ lần lặp thứ 2, tức là cứ in lần thứ nhất đã dù đk đúng hay sai
+        // do{
+        //     i++;
+        //     console.log(i);
+        // }while(i < 10);
+
+        var i2 = 0;
+        var isSuccess = false;
+        do {
+            i2++;
+            console.log('Nạp lần thứ ' + i2);
+            if(true) {
+                isSuccess = true;
+            }
+        }while(!isSuccess && i2 < 3);
+    </script>
+</body>
+</html>

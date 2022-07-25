@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 1; var b = 2
+        var c = a1 ** b1
+        console.log('Lũy thừa 3^4 bằng ' + c)
+
+        // Việc 1: +1 cho a , a = a + 1 => a = 7
+        // Việc 2: Trả về a sai khi được +1
+        ++a1 // tien to (Prefix)
+
+        // việc 1: 'a copy' , 'a copy' = 6
+        // Việc +1 của a, a = a + 1 => a = 7
+        // Việc 3: Trả về biến 'a copy'
+        a1++ // hau to (Prefix)
+
+        var number = 6;
+        var output = number++ + --number;       // =12
+
+        // number++ => number = 7 và trả về biến copy = 6
+        // --number => bởi vì number lúc này = 7 nên --number = 6
+
+        
+
+        //0, false , '' - "", NaN, null, undefined
+        // 6 gia tri tren , khi convert sang boolean thi se la false con lai la true
+
+        if (a < b) {
+            console.log("ok")
+        } else {
+            console.log("not ok")
+        }
+
+        // === và !!= là so sánh tuyệt đối, so sánh cả value và datatype của nhau
+        // còn == và != chỉ so sanh value của nhau 
+        var d = '1';
+        console.log(a===c);     
+        console.log(a!==c);
+
+
+        var result = 'A' && 'B' && '';    
+        // trong toán tử logic && thì kết quả trả về sẽ là kết quả của 1 trong các vế từ trái sang phải
+        // xét từng trường hợp, nếu trường hợp này k nằm trong 6 giá trị trên thì nó sẽ chuyển đến giá trị tiếp, tiếp tục cho đến giá trị cuối cùng nếu k nằm trong 6 giá trị kia thì lấy giá trị cuối cùng gán cho biến
+        // nhưng nếu lướt đến TH nào mà nằm trong 6 giá trị trên thì lấy luôn giá trị đó gán cho biến
+        console.log(result);
+
+        // với || thì lại ngược lại với && , nó sẽ lấy 
+    </script>
+</body>
+</html>

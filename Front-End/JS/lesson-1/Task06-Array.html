@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var language = [
+            'Java', 'HTML', 'C++'
+            // null, undefined,
+            // function() {
+
+            // },
+            // {},
+            // 123
+        ];
+        console.log(language);
+        console.log(language[2]);
+
+        console.log(language.toString());   // convert array to string
+
+        console.log(language.join(' - '));    // nếu để trống thì giống toString, nhưng để 1 chuỗi rỗng thì nó sẽ chuyển về dạng ta yêu cầu
+
+        // pop : deleted end of array and return deleted value
+        console.log('pop: ' + language.pop());
+
+        // shift:deleted the first value of the array and returns that value
+        
+        //push: add one or more elements at the end of the array and return the length of the string after adding
+        console.log(language.push('HTML', 'Boostrap'));
+
+        // unshift: add one or more elements at the beginning of the array and return the length of
+
+        // splice: xóa phần tử theo vị trí tùy ý , số 1 là vị trí bắt đầu đặt con trỏ, số 2 là số phần tử xóa, tham số thứ 3 là phần tử chèn
+        language.splice(1, 2, 'Vue');
+        console.log(language);
+
+        var language2 = [
+            'Dark', 
+            'Ruby'
+        ];
+        console.log(language.concat(language2));
+
+        // slice: cắt 1 vài phần tử của mảng
+        console.log(language.slice(1));
+    </script>
+</body>
+</html>

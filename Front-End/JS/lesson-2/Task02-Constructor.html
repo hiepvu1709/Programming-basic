@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object constructor
+        function User(firstName, lastName, avatar) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.avatar = avatar;
+
+            // this ở trong return được gọi từ ông nào thì là ông đó
+            this.getName = function() {
+                return `${this.firstName} ${this.lastName}`
+            }
+        }
+
+        var author = new User('Hiep','Vu','Avatar');
+        var user = new User('A','Nguyen','Avatar');
+
+        author.title = 'Chia sẻ tại F8';
+        user.comment = 'Hay quá ad ơi!';
+
+        console.log(author);
+        console.log(user);
+        console.log(author.getName());
+        console.log(user.getName());
+
+
+    // object prototype (nguyên mẫu đối tượng) là những cấu thành nên 1 đtg giúp thêm đc 1 tt ở bên ngoài hàm tạo
+        User.prototype.className = 'F8';
+        User.prototype.getClassName = function() {
+            return this.className;
+        }
+        console.log(user.className);
+        console.log(author.getClassName());
+
+
+        // Date object 
+        var date = new Date();
+        var day = date.getDate();
+        var month = date.getMonth() + 1;
+        var year = date.getFullYear();
+        console.log(`${day}/${month}/${year}`);
+
+        // theo 1 function
+        function getNextYear() {
+            var nextYear = new Date();
+            return nextYear.getFullYear() + 1;
+        }
+        console.log('Năm kế tiếp năm nay là: ' + getNextYear());
+    </script>
+</body>
+</html>

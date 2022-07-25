@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * 1. for - repeat với điều kiện đúng
+         * 2. for/in - Loop through key of object
+         * 3. for/of - Loop through value of object
+         * 4. while - loop when condition is true
+         * 5. do/while - Repeat at least once, then repeat when the condition is true
+         */
+
+        function getRandNumbers(min, max, length) {
+            var newArray = [];
+            for (var i = 0; i < length; i++){
+                newArray[i] = Math.floor(Math.random() * (max - min) + min);        // cách tạo ra 1 số ngẫu nhiên trong khoảng từ min-max 
+            }
+            return newArray;
+        }
+        console.log(getRandNumbers(1,20,2))
+
+        function getTotal(arr) {
+            var sum = 0;
+            for( var i = 0 ; i < arr.length ; i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        console.log(getTotal([2,5,8]));
+
+        var myArray = [
+            'JavaScript',
+            'PHP',
+            'Java',
+            'Dart'
+        ];
+        var arrayLength = myArray.length;
+        for ( var i = 0 ; i < arrayLength ; i++ ) {
+            console.log( myArray[i]);
+        }
+
+        var orders = [
+            {
+                name: 'Khóa học HTML - CSS Pro',
+                price: 3000000
+            },
+            {
+                name: 'Khóa học Javascript Pro',
+                price: 2500000
+            },
+            {
+                name: 'Khóa học React Pro',
+                price: 3200000
+            }
+        ]
+
+        function getTotal (orders) {
+            var sum = 0;
+            var arrayLength = orders.length;
+            for (var i = 0 ; i < arrayLength ; i++)
+            {
+                sum += orders[i].price;
+            }
+            return sum;
+        }
+        getTotal(orders) // Output: 8700000
+
+    </script>
+</body>
+</html>

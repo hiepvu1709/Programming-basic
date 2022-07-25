@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myArray = [
+            [1,2],
+            [3,4],
+            [5,6]
+        ];
+
+        for ( var i = 0 ; i < myArray.length ; i++ ) {
+            for(var j = 0 ; j < myArray[i].length ; j++) {
+                console.log(myArray[i][j]);
+            }
+        }
+
+        // nguyên lý hoạt động của vòng lặp lồng nhau:
+        // với vòng for đầu tiên, định nghĩa biến i và cho nó chạy từ 0 đến độ dài của mảng
+        // tiếp tục sang vòng lặp thứ hai, định nghĩa biến j và cùng cho nó chạy từ 0 đến số phần tử trong các mảng con
+        // j < myArray[i].length mà i = 0 thì ta được mảng đầu tiên, và các mảng đầu tiên này có 2 phần tử, thỏa mãn điều kiện
+        // tiếp tục j = 0 nữa thì nó in ra được số 1, sau đó tăng giá trị của j lên 1 , vẫn thỏa mãn điều kiện, nên tiếp tục in ra 2
+        // khi vòng con chạy xong nó sẽ quay ngược lại vòng cha, và nó tăng gia trị của i lên 1 nữa và nó tiếp tục các mảng còn lại
+
+        for (var i = 100 ; i > 0 ; i--) {
+            console.log(i);
+        }
+
+        for (var i = 0 ; i<= 100 ; i+=5) {
+            console.log(i);
+        }
+    </script>
+</body>
+</html>

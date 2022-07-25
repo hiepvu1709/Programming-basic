@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myInfo = {
+            name: 'Xuan Hiep', 
+            age: 18,
+            address: 'Nam Dinh, VN',
+            // this <=> myInfo , điều này đc sử dụng như 1 con trỏ , nếu dùng myInfo.name thì giả sử có sử tên object đi ta cũng phải đi xuống từng cái tên như này để sửa
+            getName: function() {
+                return this.name;   
+            }
+        };
+        console.log(myInfo);
+
+        // add value
+        myInfo.email = 'vuxuanhiep1709@gmail.com';
+
+        // get value
+        console.log(myInfo.name);
+        // cach khac: console.log(myInfo['address']);
+        var myKey = 'address';
+        console.log(myInfo[myKey]);
+
+        // xoa value
+        delete myInfo.email;
+
+        // để lấy ra 1 function trong 1 object
+        console.log(myInfo.getName);
+         console.log(myInfo.getName());
+
+         // function --> phương thức (method)
+         // other --> thuộc tính (property)
+
+         
+    </script>
+</body>
+</html>

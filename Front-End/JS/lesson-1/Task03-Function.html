@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Tham số (parameter) unlimited datatype, có tính private , tức là chỉ hđ ở trong function 
+        // Message là parameter , 'Hello my friend' là đối số
+        function writeLog(Message1, Message2) {
+            console.log(Message1, Message2);
+        }
+        writeLog('Hello my friend', 'How are you?');
+
+        // cách hđ của vòng for of : vòng 1 chạy qua arguments và lấy element đầu tiên của array này gán cho biến param sau đó chạy vào đoạn code trong, hết vòng 1 thì lại tiếp
+        function Vlog() {
+            var myString = '';
+            for (var param of arguments) {  // arguments đang là 1 array
+                myString += `${param} - `   // template String
+            }
+            console.log(myString);
+        }
+        Vlog('Log1', 'Log2', 'Log3');
+
+        // khi đã dùng keyword return thì những đoạn code đằng sau sẽ k hoạt động nữa
+        function add(a,b) {
+            return a + b;
+        }
+            // trong 1 hàm nếu k return thì mặc định sẽ trả về undefined v
+        var result = add(2,8);
+        console.log(result);
+
+        // Declaration function giống như các hàm trên, nó có thể đc gọi trước khi đc định nghĩa
+        // Expression function 
+        var showMessage = function() {
+
+        }
+
+    </script>
+</body>
+</html>

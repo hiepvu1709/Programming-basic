@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myInfo = {
+            name: 'Xuan Hiep',
+            age: 19,
+            address: 'Nam Dinh, VN'
+        };
+        // object có bao nhiêu key thì loop chạy bấy nhiêu lần
+        for ( var key in myInfo ) {
+            console.log(myInfo[key]);   // như này là lấy ra giá trị của các key trong object
+            // console.log(key); lấy ra tên các key dưới dạng chuỗi
+        }
+
+        var language = [
+            'JavaScript',
+            'Ruby',
+            'Java'
+        ];
+        for ( var key in language ) {
+            console.log(language[key]);
+        }
+
+        // trường hợp muốn lấy ra tất cả các chữ trong 1 biến
+        var myString ='JavaScript';
+
+        for ( var key in myString ) {
+            console.log(myString[key]);
+        }
+
+        function run(object) {
+            var arr = [];
+            for ( var key in object) {
+                arr.push("Thuộc tính " + key + " có giá trị " + object[key]);
+            }
+            return arr;
+        }
+        console.log(run({ name: 'Nguyen Van A', age: 16 }));
+    </script>
+</body>
+</html>

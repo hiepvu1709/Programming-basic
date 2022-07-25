@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fullName = 'Vu Xuan Hiep'
+        var age = 19
+        
+        // Một số hàm built-in
+        alert(age);         // tại 1 thời điểm alert chỉ hiển thị được 1 thông báo, hết cái này sẽ đến cái sau
+
+        console.log(fullName);          // còn warn, error,...
+
+        confirm('Xác nhận bạn đủ 18 tuổi!')     // hộp thoại xác nhận, thông báo
+
+        // cung là hộp xác nhận, thông báo nhưng yêu cầu người dùng nhập vào
+        prompt('Mời bạn nhập độ tuổi của mình để xác nhận: ');
+
+        // cho 1 đoạn code để chạy sau 1 khoảng thời gian, chạy 1 lần, thời gian được tính bằng ms
+        setTimeout(function() {
+            alert('Thong bao')
+        }, 5000) // 5000 = 5s
+
+        // cũng giống như setTimeout nhưng setInterval lại chạy liên tục
+        setTimeout(function() {
+            alert('Day la log' + Math.random())
+        }, 5000)
+    </script>
+</body>
+</html>

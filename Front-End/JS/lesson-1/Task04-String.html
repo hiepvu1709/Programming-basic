@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // backslash
+        var myString2 = 'Hiep Vu la \'Sieu Nhan\'' // hoặc có thể bên ngoài "" bên trong '', hặc ngược lại
+
+        // template string
+        var firstName = 'Hiep'; var lastName = 'Vu'
+        console.log(`Toi la ${firstName} ${lastName}`);
+        
+        console.log(myString2.length);
+        
+        // trả về vị trí chuỗi đầu tiên tìm đc, còn những chuỗi giống còn lại sẽ k trả về vị trí 
+        console.log("Chữ Vu nằm ở vị trí số: " + myString2.indexOf('Vu'))
+        console.log(myString2.lastIndexOf('Sieu'));
+
+        console.log(myString2.search('Vu'))
+
+        //cắt chuỗi , tham số đầu tiên là vị trí bắt đầu, nếu k có tham số thì sẽ cắt toàn bộ 
+        console.log(myString2.slice(5,7))
+
+        console.log(myString2.replace('Vu', 'Xuan'));
+
+        console.log(myString2.toUpperCase());
+        console.log(myString2.toLowerCase());
+
+        // Trim : giúp bỏ khoảng trắng thừa ở hai đầu
+        var myString3 = '    Hello xin chao cac ban , ố dề!    ';
+        console.log(myString3.trim())
+
+        // split: giúp tách chuỗi ra thành các element của 1 array dựa vào điểm chung 
+        var language = 'JS, C++, Java';
+        console.log(language.split(', '));
+
+        // get a character by index
+        console.log(myString2.charAt(5));
+    </script>
+</body>
+</html>

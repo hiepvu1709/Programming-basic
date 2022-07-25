@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Xác định điểm dừng
+        // 2. Logic handle => Tạo điểm dừng
+        // hàm đệ quy là hàm trong quá trình thực thi nó gọi lại chính nó 
+        
+        function countDown(number) {
+            if(number > 0) {
+                console.log(number);
+                return countDown(number - 1);
+            }
+            return number;
+        }
+
+        countDown(3);
+        // lần 1: chạy countDown, truyền number = 3 , console.log ra 3
+        // tiếp tục xuống thằng return nó gọi lại countDown(number -1) tức là number bây giờ bằng 2
+        // nó gọi lại hàm thì sẽ lại quay ra ngoài thực thi từ đầu với number = 2, 2 thỏa mãn điều kiện, console.log ra 2 , tiếp tục với các lần tiếp theo
+        // khi 1 -1 =0 so với điều kiện false thì nó sẽ lọt vào cái điều kiện dừng 
+
+        function giaiThua(num) {
+            if(num > 0) {
+                return num * giaiThua(num - 1);
+            }
+            return 1;
+        }
+
+        console.log(giaiThua(3));
+    </script>
+</body>
+</html>
