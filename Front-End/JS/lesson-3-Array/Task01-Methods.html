@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses = [
+            {
+                id: 1,
+                name:'Java',
+                coin: 250
+            },
+            {
+                id:2,
+                name: 'HTML,CSS',
+                coin: 0
+            },
+            {
+                id:3,
+                name: 'PHP',
+                coin: 0
+            },
+            {
+                id:4,
+                name: 'Python',
+                coin: 300
+            },
+            {
+                id:5,
+                name: 'Ruby',
+                coin: 400
+            },
+            {
+                id:6,
+                name: 'Ruby',
+                coin: 500
+            }
+        ];
+
+        // forEach : duyệt qua từng phần tử của mảng
+        courses.forEach(function(course,index) {
+            console.log(index,course);
+        });
+
+        // every: cách viết giống forEach, kiểu trả về boolean check all elements phải T/M 1 đk nào đó
+
+        // ví dụ check xem các khóa học có miễn phí không
+        // nếu all khóa học miễn phí thì isFree sẽ trả về true và ngược lại chỉ cần 1 khóa học mất phí thì sẽ false
+        var isFree = courses.every(function(course,index) {
+            return course.coin === 0;
+            // khi return này đi check đk của ông đầu tiên, nếu đúng thì sẽ đi check ông tiếp theo
+            // nhưng nếu sai ngay từ ông đầu hoặc 1 ông nào đó thì sẽ dừng lại và in ra false, tất cả các ông đằng sau k đc check nữa
+        });
+        console.log(isFree);
+
+        // some : ngược với every , check từ ông đầu tiên , nếu trong mảng chỉ cần có 1 ông TMDK thì sẽ dừng và in ra true,nhưng nếu có 2 ông tmdk thì sẽ in ra false
+
+        // find: lặp qua từng phần tử , check từng phần tử , nếu tmdk thì return lại cái phần tử đó và vòng check cũng kết thúc luôn, và chỉ trả về 1 ông 
+        var course = courses.find(function(course,index) {
+            return course.name === 'Ruby';
+            });
+        console.log(course);
+
+        // filter: giống find nhưng trả về tất cả các phần tử
+        var listCourses = courses.filter(function(course,index) {
+            return course.name === 'Ruby';
+            });
+        console.log(listCourses);
+
+        const sports = [
+            {
+                name: 'Bóng rổ',
+                like: 6
+            },
+            {
+                name: 'Bơi lội',
+                like: 5
+            },
+            {
+                name: 'Bóng đá',
+                like: 10
+            },
+        ]
+
+        function getMostFavoriteSport(array) {
+            var arrFilter = array.filter((val) => {
+                return val.like > 5
+            })
+            return arrFilter;
+        }
+        console.log(getMostFavoriteSport(sports)) 
+    </script>
+</body>
+</html>

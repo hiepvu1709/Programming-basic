@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses = [
+            {
+                id: 1,
+                name:'Java',
+                coin: 250
+            },
+            {
+                id:2,
+                name: 'HTML,CSS',
+                coin: 0
+            },
+            {
+                id:3,
+                name: 'PHP',
+                coin: 0
+            },
+            {
+                id:4,
+                name: 'Python',
+                coin: 300
+            },
+            {
+                id:5,
+                name: 'Ruby',
+                coin: 400
+            },
+            {
+                id:6,
+                name: 'Ruby',
+                coin: 500
+            }
+        ];
+            // map cho phép chỉnh sửa hoặc thay đổi element của array
+            // function này return lại cái gì, thì cái vị trí của element đó trong mảng mới là cái đó
+        function coursesHandler(course, index) {
+            return {
+                id: course.id,
+                name: `Khoa hoc: ${course.name}`,
+                coin: course.coin,
+                coinText: `Gia: ${course.coin}`,
+                index: index,
+            }
+        }
+
+        var newCourses = courses.map(coursesHandler);
+        console.log(newCourses);
+    </script>
+</body>
+</html>

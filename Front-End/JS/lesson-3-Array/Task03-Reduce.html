@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses = [
+            {
+                id: 1,
+                name:'Java',
+                coin: 250
+            },
+            {
+                id:2,
+                name: 'HTML,CSS',
+                coin: 0
+            },
+            {
+                id:3,
+                name: 'PHP',
+                coin: 0
+            },
+            {
+                id:4,
+                name: 'Python',
+                coin: 300
+            },
+            {
+                id:5,
+                name: 'Ruby',
+                coin: 400
+            },
+            {
+                id:6,
+                name: 'Ruby',
+                coin: 500
+            }
+        ];
+
+        var i = 0;
+
+        function coinHandler(total, course) {
+            i++;
+            var Sum = total + course.coin;
+
+            console.table({
+                'Lượt chạy: ': i,
+                'Biến tích trữ: ': total,
+                'Gía khóa học: ':course.coin,
+                'Tích trữ được: ': total
+            });
+            return Sum;
+        }
+
+        // sau khi chạy hết các lượt thì reduce sẽ return cái giá trị cuối cùng gán vào totalCoin  thế nên là in ra đc giá trị cuối cùng ở bên ngoài
+
+        var totalCoin = courses.reduce(coinHandler, 0);
+        // 0 là giá trị khởi tạo của reduce, sẽ được gán cho total cho lần chạy đầu tiên, nhưng từ lần thứ hai sẽ thành undefined lý do là chưa return gì cả
+        // nếu function return cái gì thì lần thứ hai total sẽ là cái đó
+        console.log(totalCoin);
+
+        /**
+         * Chốt lại bên trên chỉ là diễn giải cách hoạt động của reduce còn dưới đây là bản ngắn gọn 
+         * var totalCoin = courses.reduce(function(total, course){
+         *      return total + course.coin;
+         * },0); */
+
+         var sports = [
+            {
+                name: 'Bơi lội',
+                gold: 11
+            },
+            {
+                name: 'Boxing',
+                gold: 3
+            },
+            {
+                name: 'Đạp xe',
+                gold: 4
+            },
+            {
+                name: 'Đấu kiếm',
+                gold: 5
+            },
+        ]
+
+        function getTotalGold(array) {
+            var Gold = array.reduce(function(accumulator, currentValue){
+                return accumulator + currentValue.gold;
+            },0);
+            return Gold;
+        }
+        console.log(getTotalGold(sports)) // Output: 23
+
+
+        
+    </script>
+</body>
+</html>

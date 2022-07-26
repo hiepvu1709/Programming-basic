@@ -1,0 +1,8 @@
+/* Chỉ với màn hình 
+    max-width:1024px đc hiểu như sau: nếu ghi max thì mk hiểu là nhỏ hơn hoặc bằng 1024px thì sẽ apply các thuộc tính bên trong và ngược lại với min
+*/
+@media only screen and (max-width:1024px) {
+    h1{
+        color: red;
+    }
+}
