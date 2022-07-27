@@ -135,5 +135,8 @@
         "vòng",
         "Xuan",
         "xuống"
-    ]
+    ],
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 25,
+    "editor.wordWrap": "on"
 }
